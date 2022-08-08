@@ -1,0 +1,16 @@
+name: jalil khoironi
+avatar: images/profile.jpg # Avatar image. Default to "images/profile.webp".
+bio: 'Mimpi yang hilang.'
+#company: Company # HTML markup are supported, such as: <a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>.
+location: Indonesia # HTML markup are supported, such as: <a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>.
+# about: https://razonyang.com # The external about page. The internal about page will be used if not set.
+params: {
+  # layout: compact
+}
+social:
+  email: Jalilkhoironi00@gmail.com
+  github: Unthenamed
+  twitter: jalil_khoironi
+  patreon: razonyang
+  paypal: jalil_khoironi
+  rss: "" # Remove RSS

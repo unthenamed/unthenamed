@@ -1,0 +1,6 @@
++++
+title = "Github"
+aliases = [
+  "/github"
+]
++++

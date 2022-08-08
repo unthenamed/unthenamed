@@ -1,0 +1,6 @@
++++
+title = "OpenClash"
+aliases = [
+  "/openclash"
+]
++++
