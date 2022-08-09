@@ -8,6 +8,7 @@
 	comment = true
 	toc = true
 	reward = true
+	carousel = true
 	pinned = false
 
 		categories = [
@@ -29,10 +30,9 @@
 			"/MacScannRouterOS"
 		]
 +++
-mac-scann di RouterOS adalah suatu alat untuk keperluan menyurpai alamat mac mana saja yang terhubung di suatu LAN. 
-Ada kalanya kita kesulitan mengetahui mac manasaja yang terubung pada suatu LAN. Terlebih jika dalam jaringan LAN tersebut terdapat Mangement hostpot. Karna jika terdapat Management hospot kita menggunakan tool-tool lain seperti yang tool yang banyak tersedia contohnya dalam android Alamat mac yang terdeteksi hanya akan menampilkan alamat Mac mikrotik tersebut (server hostpot).
-
+`Mac-scan` di RouterOS adalah suatu alat untuk keperluan menyurpai alamat mac mana saja yang terhubung di suatu LAN. 
 <!--more-->
+Ada kalanya kita kesulitan mengetahui mac manasaja yang terubung pada suatu LAN. Terlebih jika dalam jaringan LAN tersebut terdapat Mangement hostpot. Karna jika terdapat Management hospot kita menggunakan tool-tool lain seperti yang tool yang banyak tersedia contohnya dalam android Alamat mac yang terdeteksi hanya akan menampilkan alamat Mac mikrotik tersebut (server hostpot).
 
 Bagaimana solusinya?  disini kita memenfaatkan tool yang di sediakan mikrotik tersebut untuk melist mana saja mac yang terhubung dalam suatu Lan.
 

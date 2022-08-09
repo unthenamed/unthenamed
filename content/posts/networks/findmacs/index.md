@@ -9,6 +9,7 @@
 	toc = true
 	reward = true
 	pinned = false
+    carousel = true
 
 		categories = [
 			"Networks"
@@ -32,12 +33,11 @@
 +++
 Temukan alamat MAC untuk rentang IP menggunakan ARP
 
+<!--more-->
 Alat ini akan menanyakan setiap IP dalam rentang tertentu dan mencetak alamat MAC yang diterima ke keluaran standar. Ini menggunakan protokol ARP. Perangkat yang terhubung ke jaringan yang tidak menggunakan protokol IP tidak akan ditemukan.
 
 Opsional Anda dapat memberikan daftar alamat MAC untuk menyaring output. Filter dapat diatur untuk menampilkan alamat dalam daftar atau tidak dalam daftar.
 
-
-<!--more-->
 - - -
 {{< adstex >}}
 - - -
