@@ -30,35 +30,27 @@
 			"/MacScannRouterOS"
 		]
 +++
-`Mac-scan` di RouterOS adalah suatu alat untuk keperluan menyurpai alamat mac mana saja yang terhubung di suatu LAN. 
+Mac-scan di RouterOS adalah alat yang berguna untuk mengidentifikasi alamat MAC perangkat yang terhubung dalam sebuah jaringan lokal (LAN). 
 <!--more-->
-Ada kalanya kita kesulitan mengetahui mac manasaja yang terubung pada suatu LAN. Terlebih jika dalam jaringan LAN tersebut terdapat Mangement hostpot. Karna jika terdapat Management hospot kita menggunakan tool-tool lain seperti yang tool yang banyak tersedia contohnya dalam android Alamat mac yang terdeteksi hanya akan menampilkan alamat Mac mikrotik tersebut (server hostpot).
+Terkadang, kita menghadapi kesulitan dalam menentukan alamat MAC perangkat yang terhubung, terutama saat ada filter hotspot yang diterapkan. Filter hotspot biasanya hanya menampilkan alamat MAC dari server hotspot, membuat kita sulit untuk mengetahui perangkat lain yang terhubung. Artikel ini akan membahas bagaimana kita dapat memanfaatkan alat Mac-scan yang disediakan oleh MikroTik RouterOS untuk membuat daftar alamat MAC perangkat yang terhubung di jaringan. Kami juga akan menjelaskan cara melakukan ini dengan perangkat MikroTik, seperti Sxtsq2nd, dan bahkan dengan menggunakan MikroTik yang dijalankan dalam VirtualBox dengan antarmuka terhubung ke LAN yang sesuai.
 
-Bagaimana solusinya?  disini kita memenfaatkan tool yang di sediakan mikrotik tersebut untuk melist mana saja mac yang terhubung dalam suatu Lan.
+## Langkah-langkah Penggunaan Mac-Scan di RouterOS
 
-kali ini saya menggunakan mikrotik Sxtsq2nd untuk mencoba menggunakan mac-scanner. Dan bagaimana jika kita tidak mempunyai  mikrotik? Bisa menggunakan Mikrotik crack di Virtualbox dengan interface yang terbridge ke LAN Tersebut. 
-
-
-oke langsung saja ke tutuorial.
-Karna Mac-scan hanya tersedia via terminal maka kita masuk ke mikrotik melalui ssh ataupun via terminal di webfig itu sendiri
-
+1. **Masuk ke Terminal RouterOS**: Pertama, akses perangkat RouterOS Anda melalui antarmuka administratif, entah itu melalui SSH atau melalui terminal di webfig.
 ![Center](potossh.png#width=300px)
 
-jika sudah masuk ke terminal mikrotik kita ketikan perintah
-```
-/tool mac-scan interface=wlan1
-```
-Dan jika berhasil akan muncul list Mac beserta ip
+2. **Jalankan Perintah Mac-Scan**: Setelah Anda masuk ke terminal MikroTik, ketik perintah berikut untuk menjalankan Mac-Scan. Pastikan untuk mengganti `interface=wlan1` dengan nama antarmuka yang terhubung ke LAN yang akan Anda scan. Anda tidak perlu mengatur alamat IP pada antarmuka ini karena kita akan melakukan pemindaian terhadap semua perangkat yang terhubung di LAN tersebut.
 
+   ```
+   /tool mac-scan interface=wlan1
+   ```
+## Hasil Scan
+1. **Hasil Scan Alamat MAC**: Hasil dari pemindaian akan menampilkan daftar alamat MAC perangkat yang terhubung bersama dengan alamat IP mereka.
 ![Center](potoscan.png#width=300px)
 
-perlu di ingat interface harus di sesuaikan dengan mana yang terhubung ke LAN yang akan kita Scann dan tidak perlu mengatur ip di interface tersebut karna kita akan menscan seluruhnya mana saja mac yang terhubung dalam LAN tersebut.
-
-Arahkan up/down untuk mengetahui seberapa banyak mac yang terlist
-Dan di sini kita bisa menyimpannya dengan menekan tombol D (Dump), dan kita dapat mengambil nya di file mikrotik. atau lebih jelasnya kita menggunakan ftp untuk mengambilnya di file root mikrotik dengan nama `console-dump.txt` 
+2. **Simpan Hasil Scan**: Anda dapat menyimpan hasil pemindaian ini dengan menekan tombol "D" (Dump), dan Anda dapat mengambilnya dari perangkat MikroTik dalam file dengan nama `console-dump.txt` Anda dapat menggunakan FTP atau cara lain untuk mengambil file ini dari root file sistem MikroTik.
 
 ![Center](dump.png#width=300px)
 
-Dan hasil mac ini kita bisa gunakan untuk sekedar tujuan ingin mengetahui perangkat yang terhubung ataupun bisa kita gunakan untuk Spoof Mac address pada tutorial selanjutnya.
-
+Hasil dari Mac-Scan dapat digunakan untuk tujuan pengetahuan perangkat yang terhubung ke jaringan Anda atau bahkan untuk keperluan lain, seperti Spoofing alamat MAC. Selalu gunakan alat ini dengan bijak dan dengan mematuhi kebijakan keamanan dan hukum yang berlaku. Semoga artikel ini bermanfaat dalam mengidentifikasi perangkat yang terhubung ke jaringan Anda.
 - - -
