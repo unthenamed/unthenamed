@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f74feefa-413b-4809-b85d-9956b0a8faf7/deploy-status)](https://app.netlify.com/sites/unthenamed/deploys)
 ## Personal Bio
 I am a software developer who designs, builds, and maintains software applications. I also have a passion for design and a commitment to sharing knowledge.
 
