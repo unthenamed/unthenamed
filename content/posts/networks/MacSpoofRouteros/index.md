@@ -85,7 +85,7 @@ Berikut adalah langkah-langkah untuk menambahkan skrip di RouterOS MikroTik mela
 7. **Isi Skrip**: Masukkan skrip di kolom "Source" dengan mengisi skirp [Mac Spoof](https://raw.githubusercontent.com/unthenamed/Spoof-MAC-RouterOS/main/Spoof.rsc)
 ![Center](scr.png#width=300px)
 
-8. **Ubah onfigurasikan skcript**
+8. **Ubah konfigurasikan skcript**
 	```
 	:local name "Spoof1" #nama skrip
 	:local mode "0"; # mode: #1 scan list ke save mac | 0 normal 
@@ -127,8 +127,10 @@ Berikut adalah langkah-langkah untuk menambahkan skrip di RouterOS MikroTik mela
 
 
 ## Cek status internet di Netwatch
-Dan untuk mengetahui script mana yang mendapatkan internet bisa di lihat di menu netwatch `tools/netwatch`
+Dan untuk mengetahui script mana yang mendapatkan internet bisa di lihat di menu netwatch `tools/netwatch`.
+
 ![Center](net.png#width=300px)
+
 ## Kesimpulan
 
 MAC Spoofing adalah teknik yang digunakan dalam dunia jaringan yang memiliki potensi baik dan buruk. Penggunaannya harus diperlakukan dengan bijak dan hanya dalam konteks yang sah. Pengalihan MAC yang ilegal dapat mengakibatkan pelanggaran keamanan, kerusakan jaringan, dan konsekuensi hukum serius. Oleh karena itu, penting untuk memahami teknik ini dan menggunakan pengetahuan ini secara bijak dan bertanggung jawab dalam pengaturan jaringan.
