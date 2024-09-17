@@ -1,3 +1,13 @@
+---
+title: RDMBS FUNDAMETAL
+linkTitle: rdbms
+series: 
+  - Course
+categories:
+  - DATABASE
+tags:
+  - rdbms
+---
 
 ### INTRODUCTION (Chapter 1)
 ---
